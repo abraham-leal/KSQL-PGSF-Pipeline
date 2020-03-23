@@ -1,0 +1,20 @@
+{
+    "name": "jdbc-source-connect",
+    "config": {
+      "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+      "tasks.max": "1",
+      "key.converter":"org.apache.kafka.connect.json.JsonConverter",
+      "value.converter":"io.confluent.connect.avro.AvroConverter",
+      "value.converter.schema.registry.url":"<SR-CCLOUD-DNS>",
+      "value.converter.basic.auth.credentials.source":"USER_INFO",
+      "value.converter.basic.auth.user.info":"<SR-API-KEY>:<SR-API-SECRET>",
+      "connection.url": "jdbc:postgresql://<PG-HOST>:5432/<DB-NAME>",
+      "connection.user":"postgres",
+      "connection.password":"",
+      "mode":"incrementing",
+      "incrementing.column.name":"accountid",
+      "poll.interval.ms":"1000",
+      "topic.prefix": "jdbc-"
+    }
+  }
+  

@@ -1,0 +1,15 @@
+{
+    "schema":{
+        "type":"struct",
+        "fields":[],
+        "optional":false,
+        "name":"jdbc-testtable"
+
+    },
+    "payload":{
+        "accountid":"1",
+        "name":"abraham",
+        "lastname":"leal",
+        "comments":"comment"
+    }
+}

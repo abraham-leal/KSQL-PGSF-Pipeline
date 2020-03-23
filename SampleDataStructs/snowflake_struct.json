@@ -1,0 +1,16 @@
+{
+    "RECORD_METADATA":{
+        "CreateTime":1584948253396,
+        "offset":0,
+        "partition":0,
+        "schema_id":10002,
+        "topic":"topic"
+
+    },
+    "RECORD_CONTENT":{
+        "accountid":1,
+        "name":"abraham",
+        "lastname":"leal",
+        "comments":"comment"
+    }
+}

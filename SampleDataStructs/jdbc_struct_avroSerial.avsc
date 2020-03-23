@@ -1,0 +1,35 @@
+{
+  "connect.name": "testtable",
+  "fields": [
+    {
+      "name": "accountid",
+      "type": "int"
+    },
+    {
+      "default": null,
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "lastname",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "comments",
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ],
+  "name": "testtable",
+  "type": "record"
+}
