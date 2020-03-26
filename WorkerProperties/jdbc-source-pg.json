@@ -14,7 +14,9 @@
       "mode":"incrementing",
       "incrementing.column.name":"accountid",
       "poll.interval.ms":"1000",
-      "topic.prefix": "jdbc-"
+      "topic.prefix": "jdbc-",
+      "topic.whitelist": "<TOPIC-TO-CONSUME>"
+
     }
   }
   

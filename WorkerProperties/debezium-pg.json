@@ -12,7 +12,20 @@
         "database.dbname":"testDB",
         "database.server.name":"testDB",
         "plugin.name":"wal2json",
-        "slot.name":"debezium"
+        "slot.name":"debezium",
+
+        "database.history.kafka.bootstrap.servers":"<cloud-bootstrap-servers>",
+        "database.history.consumer.security.protocol":"SASL_SSL",
+        "database.history.consumer.ssl.endpoint.identification.algorithm": "https",
+        "database.history.consumer.sasl.mechanism":"PLAIN",
+        "database.history.consumer.sasl.jaas.config":"org.apache.kafka.common.security.plain.PlainLoginModule
+        required username=\"<CLUSTER_API_KEY>\" password=\"<CLUSTER_API_SECRET>\";",
+        "database.history.producer.security.protocol":"SASL_SSL",
+        "database.history.producer.ssl.endpoint.identification.algorithm":"https",
+        "database.history.producer.sasl.mechanism":"PLAIN",
+        "database.history.producer.sasl.jaas.config":"org.apache.kafka.common.security.plain.PlainLoginModule
+        required username=\"<CLUSTER_API_KEY>\" password=\"<CLUSTER_API_SECRET>\";",
+
         }
     }
     
