@@ -5,11 +5,15 @@
     "tasks.max": "4",
     "key.converter": "org.apache.kafka.connect.json.JsonConverter",
     "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "value.converter.schema.registry.url":"<SR-DNS>",
+    "value.converter.basic.auth.credentials.source":"USER_INFO",
+    "value.converter.basic.auth.user.info":"<SR-API-KEY>:<SR-API-SECRET>",
+
     "slot.name": "debezium",
     "plugin.name": "wal2json",
     "database.server.name": "testDB",
     "database.dbname": "testDB",
-    "database.hostname": "ec2-34-213-4-7.us-west-2.compute.amazonaws.com",
+    "database.hostname": "<DB-HOSTNAME>",
     "database.port": "5432",
     "database.user": "testuseraccount",
     "database.password": "******",
@@ -24,11 +28,7 @@
     "database.history.producer.ssl.endpoint.identification.algorithm":"https",
     "database.history.producer.sasl.mechanism":"PLAIN",
     "database.history.producer.sasl.jaas.config":"org.apache.kafka.common.security.plain.PlainLoginModule
-    required username=\"<CLUSTER_API_KEY>\" password=\"<CLUSTER_API_SECRET>\";",
-
-    "value.converter.schema.registry.url":"<SR-DNS>",
-    "value.converter.basic.auth.credentials.source":"USER_INFO",
-    "value.converter.basic.auth.user.info":"<SR-API-KEY>:<SR-API-SECRET>"
+    required username=\"<CLUSTER_API_KEY>\" password=\"<CLUSTER_API_SECRET>\";"
 
   }
 }

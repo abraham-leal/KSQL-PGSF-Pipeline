@@ -8,6 +8,7 @@
       "value.converter.schema.registry.url":"<SR-CCLOUD-DNS>",
       "value.converter.basic.auth.credentials.source":"USER_INFO",
       "value.converter.basic.auth.user.info":"<SR-API-KEY>:<SR-API-SECRET>",
+      
       "connection.url": "jdbc:postgresql://<PG-HOST>:5432/<DB-NAME>",
       "connection.user":"postgres",
       "connection.password":"",
